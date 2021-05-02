@@ -16,4 +16,4 @@ app.use(require('./src/router/auth'));
 
 
 
-app.listen(PORT , ()=>{console.log(`listening to the port  http://localhost:${PORT}`)});
+app.listen(PORT , ()=>{console.log(`Server Running on Port: http://localhost:${PORT}`)});
