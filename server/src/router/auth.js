@@ -17,7 +17,7 @@ router.get('/contact',(req,res)=>{
     res.send('Contact Page');
 })
 router.get('/register',(req,res)=>{
-    res.send("kkskskk")
+    res.send("Register page")
 })
 router.post('/register',async (req,res)=>{
   
