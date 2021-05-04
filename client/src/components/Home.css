@@ -1,0 +1,21 @@
+.both{
+    display: flex;
+}
+.left{
+    position: absolute;
+    width: 50%;
+    background: #fbfb26;
+    height: 100vh;
+}
+.right{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    background: #26fbdf;
+    height: 100vh;
+}
+
+.headline{
+    position: absolute;
+    left: 29%;
+}

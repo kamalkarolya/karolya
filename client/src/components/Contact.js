@@ -7,7 +7,7 @@ const Contact = () => {
                 <div className="upper-row" >
 
                     <div className="phone" >
-                        <i class="bi bi-phone pe-2"></i>
+                        <i className="bi bi-phone pe-2"></i>
                         <div>
                             <h3>Phone</h3>
                             <p>95521677036</p>
@@ -17,7 +17,7 @@ const Contact = () => {
 
 
                     <div className="phone" >
-                        <i class="bi bi-envelope pe-3"></i>
+                        <i className="bi bi-envelope pe-3"></i>
                         <div>
                             <h3>Email</h3>
                             <p>kamal@karolya.com</p>
@@ -27,7 +27,7 @@ const Contact = () => {
 
 
                     <div className="phone" >
-                        <i class="bi bi-geo-alt pe-2 "></i>
+                        <i className="bi bi-geo-alt pe-2 "></i>
                         <div>
                             <h3>Address</h3>
                             <p>New Delhi,India</p>
@@ -42,9 +42,9 @@ const Contact = () => {
                     <h2 className="text-start" >Get in touch</h2>
                     <form>
                         <div >
-                            <input className=" col-md-3 m-2 p-1 " type="text" name="Name" placeholder="Your Name" />
-                            <input className="col-md-3 m-2 p-1" type="email" name="Email" placeholder="Your Email" />
-                            <input className="col-md-3 m-2 p-1" type="number" name="Phone" placeholder="Your Number" />
+                            <input className=" col-md-3 m-1 p-1 " type="text" name="Name" placeholder="Your Name" />
+                            <input className="col-md-4 m-1 p-1" type="email" name="Email" placeholder="Your Email" />
+                            <input className="col-md-4 m-1 p-1" type="number" name="Phone" placeholder="Your Number" />
 
                         </div>
                         {/* <input className="col-md-6 m-2 p-1" type="text"  name="Message" placeholder="Message" /> */}

@@ -1,0 +1,11 @@
+.top-info{
+    width: max-content;
+}
+.info-link{
+    width: max-content;
+   display: flex;
+   flex-direction: column;    
+}
+.info{
+    width: max-content;
+}
