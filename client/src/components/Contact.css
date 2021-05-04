@@ -1,0 +1,47 @@
+.upper-row{
+    display: flex;
+
+}
+.lower-row{
+    display: flex;
+    justify-content: center;
+}
+.phone{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    margin: 13px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 13px;
+}
+.dibba{
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+   
+    align-items: center;
+}
+h3,p{
+    margin-bottom: 0px!important;
+}
+.phone i{
+  
+    font-size: 2.5rem;
+}
+input, .hh{
+    color: #212529;
+
+   
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+}
+form{
+    width: min-content;
+}   
+   
+  
