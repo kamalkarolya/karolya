@@ -1,4 +1,5 @@
  const dotenv =  require('dotenv');
+ dotenv.config({ path: './config.env' });
 const { json } = require('express');
 const express = require('express');
 const jwt = require('jsonwebtoken');
@@ -8,16 +9,16 @@ var cookieParser = require('cookie-parser');
 
 
 // PORT
-const PORT = process.env.PORT | 3000;
+const PORT = process.env.PORT;
 
-dotenv.config({ path: './config.env' });
-// DATABASE 
+// DATABASE s
 require('./src/db/conn');
 const User = require('./src/models/user');
+app.use(cookieParser());
 
 app.use(json());
+ app.use(express.urlencoded({ extended: false }));
 app.use(require('./src/router/auth'));
-app.use(cookieParser());
 
 
 

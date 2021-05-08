@@ -19,3 +19,6 @@
     position: absolute;
     left: 29%;
 }
+.homehead{
+    text-transform: capitalize;
+}

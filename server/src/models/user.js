@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+
+
 const userSchema = new mongoose.Schema({
 
        Fullname:{
@@ -27,6 +29,18 @@ const userSchema = new mongoose.Schema({
            type:String,
            required:true,
        },
+       Date:{
+           type:Date,
+           default:Date.now
+       }
+       ,
+       Messages:[{
+           Message:{
+            type:String,
+            required:true
+           }
+       } ]
+       ,
        tokens:[{
            token:{
                type:String,
@@ -61,6 +75,17 @@ const userSchema = new mongoose.Schema({
         console.log(e);
     }
  }
+
+userSchema.methods.addMessage = async function( Fullname,Email,Phone,Message  ){
+   try {
+       this.Messages = this.Messages.concat({Message:Message});
+       await this.save();
+       return this.Messages;
+   } catch (e) {
+       console.log(e);
+   }
+
+}
 
 const User = mongoose.model("User",userSchema);
 
