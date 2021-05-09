@@ -1,6 +1,7 @@
 import React,{useState,useContext} from 'react';
 import {useHistory} from 'react-router-dom';
 import { UserContext } from '../App';
+import loginimg from '../images/animlog.svg';
 
 import './Login.css';
 
@@ -71,7 +72,7 @@ const Login = () => {
                         </div>
                     </form>
       
-                    <img  className="illustrate" src=" https://img.freepik.com/free-vector/startup-life-concept-illustration_114360-1068.jpg?size=338&ext=jpg&ga=GA1.1.1991903213.1616716800"  />
+                    <img  className="illustrate" src={loginimg} />
                 </div>
             </div>
         </div>

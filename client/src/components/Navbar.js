@@ -54,10 +54,10 @@ const Navbar = () => {
    }
     return (
       <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light navii">
   <div className="container-fluid">
    <NavLink to="/" className="links" >
-         <img src={logo} className="logo" alt="Karolya" /> <span style={{fontSize:"2rem",textDecoration:"none",color:"black"}} > ₭₳Ɽ0ⱠɎ₳</span>  
+         <img src={logo} className="logo" alt="Karolya" /> <span style={{fontSize:"2rem",textDecoration:"none",color:"white"}} > ₭₳Ɽ0ⱠɎ₳</span>  
    </NavLink>
    
   

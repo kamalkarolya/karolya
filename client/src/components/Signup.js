@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import {useHistory} from 'react-router-dom';
+import signupsvg from '../images/signup.svg'
 import './Signup.css';
 const Signup = () => {
     const history = useHistory();
@@ -66,7 +67,8 @@ const Signup = () => {
                         
                          <button type="submit" className="login-btn" onClick={postData} >Login</button>
                     </form>
-                    <img src="https://image.freepik.com/free-vector/creativity-concept-illustration_114360-1083.jpg" className="illustrate" />
+                    <img src={signupsvg} className="illustrate" />
+                    
                 </div>
             </div>
         </div>

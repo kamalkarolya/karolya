@@ -1,3 +1,18 @@
 .logo{
     width: 65px;
 }
+.navi{
+    background-color: #ffffff0a!important;
+}
+.nav-link{
+    color: white!important;
+}
+.nav-link:hover{
+    font-weight: 600;
+}
+.nav-link:focus{
+    font-weight: 600;
+}
+.nav-link:active{
+    font-weight: 600!important;
+}
