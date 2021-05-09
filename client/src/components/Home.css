@@ -1,23 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 .both{
+   
     display: flex;
 }
 .left{
     position: absolute;
     width: 50%;
-    background: #fbfb26;
+    background: #252523;
     height: 100vh;
 }
 .right{
     position: absolute;
     left: 50%;
     width: 50%;
-    background: #26fbdf;
+    background: #eff5f4;
     height: 100vh;
 }
 
-.headline{
-    position: absolute;
-    left: 29%;
+.headline{ 
+     margin-top: 12em;
+      position: relative;
+      /* color: lightslategray; */
+      color: #6fb7ff;
 }
 .homehead{
     text-transform: capitalize;
