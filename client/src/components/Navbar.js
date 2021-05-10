@@ -57,7 +57,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light navii">
   <div className="container-fluid">
    <NavLink to="/" className="links" >
-         <img src={logo} className="logo" alt="Karolya" /> <span style={{fontSize:"2rem",textDecoration:"none",color:"white"}} > ₭₳Ɽ0ⱠɎ₳</span>  
+         <img src={logo} className="logo" alt="Karolya" /> <span style={{fontSize:"2rem",textDecoration:"none",color:"white",    fontvariantcaps: "all-petite-caps"}} >KAROLYA</span>  
    </NavLink>
    
   

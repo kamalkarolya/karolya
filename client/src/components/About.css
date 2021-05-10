@@ -9,3 +9,19 @@
 .info{
     width: max-content;
 }
+.col-md-6 p{
+    color: rgb(82, 82, 255);
+}
+.col-md-6 label{
+    color: white;
+}
+.social{
+    text-decoration: none;
+
+}
+.about-name{
+    color: white;
+}
+.about-work{
+    color: white;
+}

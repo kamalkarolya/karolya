@@ -45,15 +45,15 @@ const About = () => {
                  </div>
                  <div className="col-md-6" >
                     <div className="top-info" >
-                        <h5>{userData.Fullname}  </h5>
-                        <h6>{userData.Work}</h6>
-                        <p  >Ranking  <span>1/10</span> </p>
+                        <h5 className="about-name" >{userData.Fullname}  </h5>
+                        <h6 className="about-work" >{userData.Work}</h6>
+                        <p>Ranking  <span>1/10</span> </p>
                         <ul className="nav nav-tabs" role="tablist" >
                             <li className="nav-item" >
-                                <a className="nav-link active" id="home-tab" href="#home"  data-toggle="tab" role="tab" aria-controls="home"  aria-selected="true" >About </a>
+                                <a className="nav-link " id="home-tab" href="#home"  data-toggle="tab" role="tab" aria-controls="home"  aria-selected="true" >About </a>
                             </li>
                             <li className="nav-item" >
-                                <a className="nav-link active" id="timeline-tab" href="#timeline" data-toggle="tab" role="tab" aria-controls="timeline"  aria-selected="true">Timeline </a>
+                                <a className="nav-link " id="timeline-tab" href="#timeline" data-toggle="tab" role="tab" aria-controls="timeline"  aria-selected="true">Timeline </a>
                             </li>
 
                         </ul>
@@ -68,14 +68,14 @@ const About = () => {
                   {/* Rigth side  */}
                   <div className="col-md-4" >
                       <div className="info-link" >
-                          <p>
-                              Work Link
-                          </p>
-                          <a href="#" target="_blank" >Instagram</a>
-                          <a href="#" target="_blank" >Facebook</a>
-                          <a href="#" target="_blank" >Youtube</a>
-                          <a href="#" target="_blank" >Instagram</a>
+                          <p>   Work Link   </p>
+                          <a href="#" className="social" target="_blank" >Instagram</a>
+                          <a href="#" className="social"  target="_blank" >Facebook</a>
+                          <a href="#" className="social"  target="_blank" >Youtube</a>
+                          <a href="#"  className="social" target="_blank" >Instagram</a>
                       </div>
+                           
+                       
 
                   </div>
                   <div className="col-md-4 pl-5 " >
