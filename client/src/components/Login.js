@@ -2,6 +2,7 @@ import React,{useState,useContext} from 'react';
 import {useHistory} from 'react-router-dom';
 import { UserContext } from '../App';
 import loginimg from '../images/animlog.svg';
+import {toast} from 'react-toastify';
 
 import './Login.css';
 
@@ -32,12 +33,14 @@ const Login = () => {
          });
          const data =await res.json();
          if(res.status==400 || !data){
-             window.alert("invalid details");
+            toast.error('invalid details', 
+              {position: toast.POSITION.TOP_CENTER});
              console.log("invalid details");
              
 
          }else{
-             window.alert("Successfull ");
+            toast.success('login Successfull', 
+            {position: toast.POSITION.TOP_CENTER});
              dispatch({type:"USER", payload:true});
             console.log("succesfull");
            history.push('./'); 

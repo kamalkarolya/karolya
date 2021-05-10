@@ -1,6 +1,8 @@
 import React, {useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 import './Contact.css';
+import {toast} from 'react-toastify';
+ 
 const Contact = () => {
     const history = useHistory();
     const [userData, setUserData] = useState({});
@@ -24,9 +26,12 @@ const Contact = () => {
                     });
                     const data = await res.json();
                     if(!data){
+                        toast.error('invalid details', 
+                        {position: toast.POSITION.TOP_CENTER});
                         console.log("messege not send");
                     }else{
-                        alert('Message sent');
+                        toast.success('Message sent ', 
+                        {position: toast.POSITION.TOP_CENTER});
                         setUserData({...userData, Message:""})
                     }
 
@@ -99,9 +104,9 @@ const Contact = () => {
                     <h2 className="text-start" >Get in touch</h2>
                     <form method="POST" >
                         <div >
-                            <input className=" col-md-3 m-1 p-1 " type="text" name="Fullname"  onChange={inputval}  value={userData.Fullname} placeholder="Your Name" />
-                            <input className="col-md-4 m-1 p-1" type="email" name="Email"  onChange={inputval}  value={userData.Email} placeholder="Your Email" />
-                            <input className="col-md-4 m-1 p-1" type="number" name="Phone"  onChange={inputval}  value={userData.Phone} placeholder="Your Number" />
+                            <input className=" col-md-3 m-1 p-1 " type="text" name="Fullname"  onChange={inputval}  value={userData.Fullname} placeholder="Your Name" required />
+                            <input className="col-md-4 m-1 p-1" type="email" name="Email"  onChange={inputval}  value={userData.Email} placeholder="Your Email" required />
+                            <input className="col-md-4 m-1 p-1" type="number" name="Phone"  onChange={inputval}  value={userData.Phone} placeholder="Your Number" required />
 
                         </div>
                         {/* <input className="col-md-6 m-2 p-1" type="text"  name="Message" placeholder="Message" /> */}

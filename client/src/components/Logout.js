@@ -1,6 +1,8 @@
 import React,{useEffect , useContext} from 'react';
 import {useHistory} from 'react-router-dom';
 import { UserContext } from '../App';
+import {toast} from 'react-toastify';
+
 
 const Logout = () => {
     const {state, dispatch} =  useContext(UserContext);
@@ -16,7 +18,8 @@ const Logout = () => {
         }).then((res)=>{
             dispatch({type:"USER", payload:false})
              history.push('/signin', {replace:true});
-
+             toast.success('logout Successfull', 
+            {position: toast.POSITION.TOP_CENTER});
              if(!res.status===200){
                  throw new Error(res.error);
              }

@@ -2,6 +2,10 @@ import React,{useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import signupsvg from '../images/signup.svg'
 import './Signup.css';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure();
+
 const Signup = () => {
     const history = useHistory();
     const [user, setUser]= useState({
@@ -15,6 +19,7 @@ const Signup = () => {
     }
     const postData= async (e)=>{
         e.preventDefault();
+
         // object destructering
          const {Fullname, Email, Phone , Work, Password,Cpassword  } = user;
          const res= await fetch("/register",{
@@ -28,12 +33,16 @@ const Signup = () => {
          });
          const data = await res.json();
          console.log(data);
-         if(res.status === 422 || !data){
-             window.alert("invalid details");
+         if(res.status === 422 || !data){ 
+             
+              toast.error('invalid details', 
+              {position: toast.POSITION.TOP_CENTER});
              console.log("invalid details");
+           
 
          }else{
-            window.alert("Successfull ");
+            toast.success('login Successfull', 
+            {position: toast.POSITION.TOP_CENTER});
             console.log("succesfull");
            history.push('./signin'); 
         }

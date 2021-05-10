@@ -11,11 +11,17 @@
     align-items: center;
     color: #fff;
     perspective: 800px;
-  }
-  div {
     transform-style: preserve-3d;
   }
-  
+  /* div {
+    transform-style: preserve-3d;
+  } */
+  .text{
+    transform-style: preserve-3d;
+  }
+  #ui{
+    transform-style: preserve-3d;
+  }
   #ui .text {
     position: absolute;
     font-size: 8rem;
